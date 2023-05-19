@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+    <link href="{%static 'style.css'%}" rel="stylesheet">
+</head>
+  <body>
+    <img src="https://innohealthmagazine.com/wp-content/uploads/2018/01/draw-compressor-1.jpg" style="width:200px;height:200px" ></img>
+    <div id="center-div">
+      <div>
+        <form method="post" action="/detect">
+         {% csrf_token %}
+          <button type="submit" ><p>Start<br>Here</p></button>
+        </form>
+      </div>
+    </div>
+  </body>
+ </html>
